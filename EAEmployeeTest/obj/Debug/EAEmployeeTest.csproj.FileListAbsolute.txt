@@ -1,0 +1,15 @@
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\chromedriver.exe
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\EAEmployeeTest.dll
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\EAEmployeeTest.pdb
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\WebDriver.dll
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\WebDriver.Support.dll
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\WebDriver.xml
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\WebDriver.Support.xml
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\obj\Debug\EAEmployeeTest.csprojResolveAssemblyReference.cache
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\obj\Debug\EAEmployeeTest.dll
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTest\obj\Debug\EAEmployeeTest.pdb
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\SeleniumExtras.PageObjects.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\EAAutoFrameWork.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\EAAutoFrameWork.pdb

@@ -1,0 +1,10 @@
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EATestProject\bin\Debug\EAAutoFrameWork.dll
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EATestProject\bin\Debug\EAAutoFrameWork.pdb
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EATestProject\obj\Debug\EAAutoFramework.csprojResolveAssemblyReference.cache
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EATestProject\obj\Debug\EAAutoFrameWork.dll
+C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EATestProject\obj\Debug\EAAutoFrameWork.pdb
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\WebDriver.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\WebDriver.Support.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\WebDriver.xml
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\WebDriver.Support.xml
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\SeleniumExtras.PageObjects.dll
