@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace EAAutoFrameWork.Base
 {
-    public abstract class BasePage_PageFactory
+    public abstract class BasePage_PageFactory: Base
     {
         //public IWebDriver driver;
         //public BasePage_PageFactory(IWebDriver driver)
@@ -17,9 +17,12 @@ namespace EAAutoFrameWork.Base
         //    PageFactory.InitElements(driver, this);
         //}
 
+        
         public BasePage_PageFactory()
         {
             PageFactory.InitElements(DriverContext.Driver, this);
         }
+
+       
     }
 }

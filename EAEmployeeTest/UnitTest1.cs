@@ -6,28 +6,64 @@ using System.IO;
 using System.Reflection;
 using EAEmployeeTest.Pages;
 using EAAutoFrameWork.Base;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 
 namespace EAEmployeeTest
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest1:Base
     {
 
         string url = "http://eaapp.somee.com/";
 
         //private IWebDriver driver;
 
+        public void OpenBrower(BrowserType browserType = BrowserType.Chrome)
+        {
+            switch (browserType)
+            {
+                case BrowserType.InternetExplorer:
+                    DriverContext.Driver = new InternetExplorerDriver();
+                    DriverContext.browser = new Browser(DriverContext.Driver);
+                    break;
+                case BrowserType.FireFox:
+                    DriverContext.Driver = new FirefoxDriver();
+                    DriverContext.browser = new Browser(DriverContext.Driver);
+                    break;
+                case BrowserType.Chrome:
+                    DriverContext.Driver = GetChromeDriver(); ;
+                    DriverContext.browser = new Browser(DriverContext.Driver);
+                    break;
+                default:
+                    break;
+            }
+        }
+
         [TestMethod]
         public void TestMethod1()
         {
             //driver = new ChromeDriver();
             //driver = GetChromeDriver();
-            DriverContext.Driver = GetChromeDriver();
-            DriverContext.Driver.Navigate().GoToUrl(url);
+            //DriverContext.Driver = GetChromeDriver();
+            //DriverContext.Driver.Navigate().GoToUrl(url);
 
-            //driver.Navigate().GoToUrl(url);
+            OpenBrower(BrowserType.Chrome);
+            DriverContext.browser.GoToURL(url);
 
-            Login();
+            ////Page Object Model - Page Factory - has been deprecated
+            CurrentPage = GetInstance<LoginPage_PageFactory>();
+
+            CurrentPage.As<LoginPage_PageFactory>().ClickLoginLink();
+            CurrentPage.As<LoginPage_PageFactory>().Login("admin", "password");
+            CurrentPage = CurrentPage.As<LoginPage_PageFactory>().ClickEmployeeListLink();
+
+            CurrentPage.As<EmployeePage>().ClickCreateNew();
+
+
+
+
+
 
             //driver.Close();
         }
@@ -49,41 +85,33 @@ namespace EAEmployeeTest
 
         public void Login()
         {
-            LoginPage_POM loginPOM = new LoginPage_POM();
-
-            //Click Login button
-            loginPOM.clickLogin1();
-
-            //Enter username
-            loginPOM.enterUserName("admin");
-
-            //Enter password
-            loginPOM.enterPassword("password");
-
-            //Click Login button 
-            loginPOM.clickLoginButton2();
-
-
-
-
-
-
-            ////Page Object Model - Page Factory - has been deprecated
-
-            ////
-            //LoginPage_PageFactory login = new LoginPage_PageFactory();
+            //LoginPage_POM loginPOM = new LoginPage_POM();
 
             ////Click Login button
-            //login.lnkLogin.Click();
+            //loginPOM.clickLogin1();
 
             ////Enter username
-            //login.txtUserName.SendKeys("admin");
+            //loginPOM.enterUserName("admin");
 
             ////Enter password
-            //login.txtPassword.SendKeys("password");
+            //loginPOM.enterPassword("password");
 
-            ////Click Login button
-            //login.btnLogin.Click();
+            ////Click Login button 
+            //loginPOM.clickLoginButton2();
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
         }
     }
 }

@@ -63,6 +63,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Pages\CreateEmployeePage.cs" />
     <Compile Include="Pages\EmployeePage.cs" />
     <Compile Include="Pages\LoginPage_POM.cs" />
     <Compile Include="Pages\LoginPage_PageFactory.cs" />

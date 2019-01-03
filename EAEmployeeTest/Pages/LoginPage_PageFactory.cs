@@ -29,15 +29,41 @@ namespace EAEmployeeTest.Pages
        
 
         [FindsBy(How = How.LinkText, Using = "Login")]
-        public IWebElement lnkLogin { get; set; }
+        IWebElement lnkLogin { get; set; }
+
+        //Navigate to Employee List page
+        [FindsBy(How = How.LinkText, Using = "Employee List")]
+        IWebElement lnkEmployeeList { get; set; }
 
         [FindsBy(How = How.Id, Using = "UserName")]
-        public IWebElement txtUserName { get; set; }
+        IWebElement txtUserName { get; set; }
 
         [FindsBy(How = How.Id, Using = "Password")]
-        public IWebElement txtPassword { get; set; }
+        IWebElement txtPassword { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//input[@value='Log in']")]
-        public IWebElement btnLogin { get; set; }
+        IWebElement btnLogin { get; set; }
+
+        public void ClickLoginLink()
+        {
+            lnkLogin.Click();
+        }
+
+        public void Login(string userName, string password)
+        {
+            txtUserName.SendKeys(userName);
+            txtPassword.SendKeys(password);
+            btnLogin.Click();
+        }
+
+        //Page Navigation: ensure that the business logic is embedded in our code
+        public EmployeePage ClickEmployeeListLink()
+        {
+            lnkEmployeeList.Click();
+            return GetInstance<EmployeePage>();
+            
+        }
+
+
     }
 }
