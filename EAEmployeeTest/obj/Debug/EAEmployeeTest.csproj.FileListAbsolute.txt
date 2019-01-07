@@ -13,3 +13,8 @@ C:\Users\nguyen\Documents\Visual Studio 2015\Projects\EATestProject\EAEmployeeTe
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\SeleniumExtras.PageObjects.dll
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\EAAutoFrameWork.dll
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\EAAutoFrameWork.pdb
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.xml
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\Data\Data.xlsx

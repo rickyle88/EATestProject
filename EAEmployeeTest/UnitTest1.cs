@@ -8,6 +8,7 @@ using EAEmployeeTest.Pages;
 using EAAutoFrameWork.Base;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
+using EAAutoFrameWork.Helpers;
 
 namespace EAEmployeeTest
 {
@@ -48,17 +49,43 @@ namespace EAEmployeeTest
             //DriverContext.Driver = GetChromeDriver();
             //DriverContext.Driver.Navigate().GoToUrl(url);
 
+            //Read excel file
+            string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Data.xlsx";
+            ExcelHelpers.PopulateInCollection(fileName);
+
+            LogHelpers.CreateLogFile();
+
             OpenBrower(BrowserType.Chrome);
+
+            LogHelpers.Write("Opened the browser !!!");
+
             DriverContext.browser.GoToURL(url);
+
+            LogHelpers.Write("Naviagated to the page !!!");
+
+           
+
 
             ////Page Object Model - Page Factory - has been deprecated
             CurrentPage = GetInstance<LoginPage_PageFactory>();
 
             CurrentPage.As<LoginPage_PageFactory>().ClickLoginLink();
-            CurrentPage.As<LoginPage_PageFactory>().Login("admin", "password");
+
+
+            //CurrentPage.As<LoginPage_PageFactory>().Login("admin", "password");
+            //Get username and password from Excel file
+            string userName = ExcelHelpers.ReadData(1, "UserName");
+            string password = ExcelHelpers.ReadData(1, "Password");
+            CurrentPage.As<LoginPage_PageFactory>().Login(userName, password);
+
             CurrentPage = CurrentPage.As<LoginPage_PageFactory>().ClickEmployeeListLink();
 
-            CurrentPage.As<EmployeePage>().ClickCreateNew();
+            CurrentPage = CurrentPage.As<EmployeePage>().ClickCreateNew();
+
+            
+
+            CurrentPage.As<CreateEmployeePage>().enterName("Name");
+            CurrentPage.As<CreateEmployeePage>().clickCreate();
 
 
 

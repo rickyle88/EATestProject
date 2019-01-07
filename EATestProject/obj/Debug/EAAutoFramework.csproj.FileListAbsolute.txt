@@ -8,3 +8,7 @@ C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProjec
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\WebDriver.xml
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\WebDriver.Support.xml
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\SeleniumExtras.PageObjects.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\ExcelDataReader.dll
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\ExcelDataReader.xml
+C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EATestProject\bin\Debug\ExcelDataReader.DataSet.xml

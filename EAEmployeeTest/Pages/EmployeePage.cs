@@ -35,7 +35,8 @@ namespace EAEmployeeTest.Pages
         public CreateEmployeePage ClickCreateNew()
         {
             lnkCreateNew.Click();
-            return new CreateEmployeePage();
+            //return new CreateEmployeePage();
+            return GetInstance<CreateEmployeePage>();
         }
 
 
