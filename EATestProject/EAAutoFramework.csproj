@@ -72,7 +72,7 @@
     <Compile Include="Config\Settings.cs" />
     <Compile Include="Extensions\WebDriverExtensions.cs" />
     <Compile Include="Extensions\WebElementExtensions.cs" />
-    <Compile Include="Helpers\DataHelperExtensions.cs" />
+    <Compile Include="Helpers\DatabaseHelperExtensions.cs" />
     <Compile Include="Helpers\ExcelHelpers.cs" />
     <Compile Include="Helpers\HtmlTableHelpers.cs" />
     <Compile Include="Helpers\LogHelpers.cs" />

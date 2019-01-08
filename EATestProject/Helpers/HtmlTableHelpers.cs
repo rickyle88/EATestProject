@@ -142,6 +142,8 @@ namespace EAAutoFrameWork.Helpers
         public int RowNumber { get; set; }
         public string ColumnName { get; set; }
         public string ColumnValue { get; set; }
+
+        //In case that column have multiple button, links...
         public ColumnSpecialValue ColumnSpecialValues { get; set; }
 
     }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAAutoFramework", "EATestPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAEmployeeTest", "EAEmployeeTest\EAEmployeeTest.csproj", "{795AD8C0-ADE3-487D-9F62-4B964D8EF75C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethod", "ExtensionMethod\ExtensionMethod.csproj", "{9D94DD2D-18B9-4BF0-BF1F-97B4021E1114}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{795AD8C0-ADE3-487D-9F62-4B964D8EF75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{795AD8C0-ADE3-487D-9F62-4B964D8EF75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{795AD8C0-ADE3-487D-9F62-4B964D8EF75C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D94DD2D-18B9-4BF0-BF1F-97B4021E1114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D94DD2D-18B9-4BF0-BF1F-97B4021E1114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D94DD2D-18B9-4BF0-BF1F-97B4021E1114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D94DD2D-18B9-4BF0-BF1F-97B4021E1114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

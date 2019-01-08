@@ -24,11 +24,14 @@ namespace EAEmployeeTest.Pages
         //}
 
         [FindsBy(How = How.Name, Using = "searchTerm")]
-        public IWebElement txtSearch { get; set; }
+        IWebElement txtSearch { get; set; }
 
         [FindsBy(How = How.LinkText, Using = "Create New")]
-        public IWebElement lnkCreateNew { get; set; }
+        IWebElement lnkCreateNew { get; set; }
 
+        //Initilize talbe
+        [FindsBy(How = How.ClassName, Using = "table")]
+        IWebElement tblEmployeeList { get; set; }
 
         //Page Navigation: ensure that the business logic is embedded in our code
         //Click Create New link => should return CreateEmployeePage
@@ -38,6 +41,12 @@ namespace EAEmployeeTest.Pages
             //return new CreateEmployeePage();
             return GetInstance<CreateEmployeePage>();
         }
+
+        public IWebElement GetEmployeeList()
+        {
+            return tblEmployeeList;
+        }
+
 
 
 
