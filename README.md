@@ -2,6 +2,11 @@
 
 Automation Framework using Selenium with C# and Specflow 
 
+Feature files:
+```
+EATestProject/EAEmployeeTest/Features/
+```
+
 Notice: PageFactory has been deprecated and refactoring process is still going on 
 
 Old method: PageFactory
