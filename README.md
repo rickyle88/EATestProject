@@ -20,7 +20,7 @@ New method: Page Object Model
 By lnkLogin = By.LinkText("Login");
 public void clickLogin1()
 {
-    IWebElement webElement = driver.FindElement(lnkLogin,10);
+    IWebElement webElement = driver.FindElement(lnkLogin);
     webElement.Click();
 }
 ```
