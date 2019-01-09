@@ -18,3 +18,25 @@ C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTe
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.xml
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.DataSet.xml
 C:\Users\nguyen\documents\visual studio 2015\Projects\EATestProject\EAEmployeeTest\bin\Debug\Data\Data.xlsx
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\Data\Data.xlsx
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\chromedriver.exe
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\EAEmployeeTest.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\EAEmployeeTest.pdb
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\EAAutoFrameWork.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\SeleniumExtras.PageObjects.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\WebDriver.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\WebDriver.Support.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\EAAutoFrameWork.pdb
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\WebDriver.xml
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\WebDriver.Support.xml
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.xml
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\obj\Debug\EAEmployeeTest.csprojAssemblyReference.cache
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\obj\Debug\EAEmployeeTest.csproj.CoreCompileInputs.cache
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\obj\Debug\EAEmployeeTest.csproj.CopyComplete
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\obj\Debug\EAEmployeeTest.dll
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\obj\Debug\EAEmployeeTest.pdb
+C:\Users\nguyenle\Documents\Automation\Selenium\EATestProject\EAEmployeeTest\bin\Debug\Config\GlobalConfig.xml

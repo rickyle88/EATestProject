@@ -9,60 +9,34 @@ using EAAutoFrameWork.Base;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using EAAutoFrameWork.Helpers;
+using EAAutoFrameWork.Config;
 
 namespace EAEmployeeTest
 {
     [TestClass]
-    public class UnitTest1:Base
+    public class UnitTest1: HookInitialize
     {
 
-        string url = "http://eaapp.somee.com/";
+        //string url = "http://eaapp.somee.com/";
+        //Get URL from GlobalConfig.xml
+
+
+
+
+        //string url = Settings.AUT;
 
         //private IWebDriver driver;
 
-        public void OpenBrower(BrowserType browserType = BrowserType.Chrome)
-        {
-            switch (browserType)
-            {
-                case BrowserType.InternetExplorer:
-                    DriverContext.Driver = new InternetExplorerDriver();
-                    DriverContext.browser = new Browser(DriverContext.Driver);
-                    break;
-                case BrowserType.FireFox:
-                    DriverContext.Driver = new FirefoxDriver();
-                    DriverContext.browser = new Browser(DriverContext.Driver);
-                    break;
-                case BrowserType.Chrome:
-                    DriverContext.Driver = GetChromeDriver(); ;
-                    DriverContext.browser = new Browser(DriverContext.Driver);
-                    break;
-                default:
-                    break;
-            }
-        }
+
 
         [TestMethod]
         public void TestMethod1()
         {
-            //driver = new ChromeDriver();
-            //driver = GetChromeDriver();
-            //DriverContext.Driver = GetChromeDriver();
-            //DriverContext.Driver.Navigate().GoToUrl(url);
+            
 
             //Read excel file
             string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Data.xlsx";
             ExcelHelpers.PopulateInCollection(fileName);
-
-            LogHelpers.CreateLogFile();
-
-            OpenBrower(BrowserType.Chrome);
-
-            LogHelpers.Write("Opened the browser !!!");
-
-            DriverContext.browser.GoToURL(url);
-
-            LogHelpers.Write("Naviagated to the page !!!");
-
            
 
 
@@ -71,6 +45,8 @@ namespace EAEmployeeTest
 
             CurrentPage.As<LoginPage_PageFactory>().ClickLoginLink();
 
+            //Check if Username and Password textbox are present
+            CurrentPage.As<LoginPage_PageFactory>().CheckIfLoginExist();
 
             //CurrentPage.As<LoginPage_PageFactory>().Login("admin", "password");
             //Get username and password from Excel file
@@ -98,20 +74,14 @@ namespace EAEmployeeTest
         [TestMethod]
         public void TableOperation()
         {
+
+           
+
             //Read excel file
             string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Data.xlsx";
             ExcelHelpers.PopulateInCollection(fileName);
 
-            LogHelpers.CreateLogFile();
-
-            OpenBrower(BrowserType.Chrome);
-
-            LogHelpers.Write("Opened the browser !!!");
-
-            DriverContext.browser.GoToURL(url);
-
             LogHelpers.Write("Naviagated to the page !!!");
-
 
 
 
@@ -138,20 +108,7 @@ namespace EAEmployeeTest
 
         }
 
-        public IWebDriver GetChromeDriver()
-        {
-            //Put chromedriver.exe in main folder, when we Build solution 
-            //Right click chromedriver.exe on Solution Explorer -> `Copy to Output Directory`: `Copy if newer` - When you build solution, chromedriver.exe will be copy to bin/Debug folder
-            //chromedriver.exe will automatically be copied to bin/Debug folder
-            //This line will point to bin/Debug folder dynamically 
-            var outputDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            return new ChromeDriver(outputDirectory);
-
-            //Another way is hard coded chromedriver folder 
-            //var outputdirectory = Path.GetFullPath("C:\\Automation Tools\\ChromeDriver");
-
-            //return new ChromeDriver(outputdirectory);
-        }
+       
 
         public void Login()
         {

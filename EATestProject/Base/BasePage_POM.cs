@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EAAutoFrameWork.Base
 {
-    public abstract class BasePage_POM
+    public abstract class BasePage_POM : Base
     {
         public IWebDriver driver;
         //public BasePage_POM(IWebDriver driver)

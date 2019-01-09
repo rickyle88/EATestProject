@@ -1,4 +1,5 @@
 ﻿using EAAutoFrameWork.Base;
+using EAAutoFrameWork.Extensions;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using System;
@@ -40,6 +41,7 @@ namespace EAEmployeeTest.Pages
         public void enterUserName(string value)
         {
             IWebElement webElement = driver.FindElement(txtUsername);
+            
             webElement.SendKeys(value);
         }
 
@@ -47,6 +49,8 @@ namespace EAEmployeeTest.Pages
         {
             IWebElement webElement = driver.FindElement(txtPassword);
             webElement.SendKeys(value);
+            
+            
         }
 
         public void clickLoginButton2()

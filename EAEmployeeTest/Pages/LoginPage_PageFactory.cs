@@ -1,4 +1,5 @@
 ﻿using EAAutoFrameWork.Base;
+using EAAutoFrameWork.Extensions;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 //using OpenQA.Selenium.Support.PageObjects;
@@ -47,6 +48,7 @@ namespace EAEmployeeTest.Pages
         public void ClickLoginLink()
         {
             lnkLogin.Click();
+            //lnkLogin.SelectDropDownList("Hello");
         }
 
         public void Login(string userName, string password)
@@ -62,6 +64,12 @@ namespace EAEmployeeTest.Pages
             lnkEmployeeList.Click();
             return GetInstance<EmployeePage>();
             
+        }
+
+        //Check if Username and password text box are displayed
+        public void CheckIfLoginExist()
+        {
+            txtUserName.AssertElementPresent();
         }
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EAAutoFrameWork.Config;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,10 +20,11 @@ namespace EAAutoFrameWork.Helpers
         //Create a file which can store the log information
         public static void CreateLogFile()
         {
-            string currentDir = "..\\..\\Log\\";
-            //string currentDir = Environment.CurrentDirectory;
-            //string currentDir = AppDomain.CurrentDomain.BaseDirectory;
-            //string currentDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            ConfigReader.SetFrameworkSettings();
+
+            //string currentDir = "..\\..\\Log\\";
+            string currentDir = Settings.LogPath.ToString();
+           
             streamw = File.AppendText(currentDir + logFileName + ".log");
         }
 
