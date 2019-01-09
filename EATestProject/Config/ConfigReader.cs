@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.XPath;
@@ -18,9 +19,9 @@ namespace EAAutoFrameWork.Config
             XPathItem islog;
             XPathItem testType;
             XPathItem isreport;
-            XPathItem logPath;
-
-            string strFileName = Environment.CurrentDirectory.ToString() + "\\Config\\GlobalConfig.xml";
+            
+            //string strFileName = Environment.CurrentDirectory.ToString() + "\\Config\\GlobalConfig.xml";
+            string strFileName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\Config\\GlobalConfig.xml";
             FileStream stream = new FileStream(strFileName, FileMode.Open);
             XPathDocument document = new XPathDocument(stream);
             XPathNavigator navigator = document.CreateNavigator();
@@ -31,7 +32,7 @@ namespace EAAutoFrameWork.Config
             testType = navigator.SelectSingleNode("EAAutoFramework/RunSettings/TestType");
             islog = navigator.SelectSingleNode("EAAutoFramework/RunSettings/Is_Log");
             isreport = navigator.SelectSingleNode("EAAutoFramework/RunSettings/IsReport");
-            logPath = navigator.SelectSingleNode("EAAutoFramework/RunSettings/LogPath");
+            
 
             //Set XML node to be used accross framework
             Settings.AUT = aut.Value.ToString();
@@ -39,7 +40,6 @@ namespace EAAutoFrameWork.Config
             Settings.TestType = testType.Value.ToString();
             Settings.Is_Log = islog.Value.ToString();
             Settings.IsReporting = isreport.Value.ToString();
-            Settings.LogPath = logPath.Value.ToString();
         }
         
     }

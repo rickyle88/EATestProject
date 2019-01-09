@@ -5,7 +5,6 @@
     <Browser>Chrome</Browser>
     <TestType>SmokeTest</TestType>
     <Is_Log>Y</Is_Log>
-    <LogPath>..\..\Log\</LogPath>
     <BuildName>DemoBuild</BuildName>
     <IsReport>N</IsReport>
     <UserName>EAutoTeam</UserName>

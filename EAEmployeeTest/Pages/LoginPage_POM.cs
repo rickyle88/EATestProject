@@ -34,7 +34,7 @@ namespace EAEmployeeTest.Pages
 
         public void clickLogin1()
         {
-            IWebElement webElement = driver.FindElement(lnkLogin);
+            IWebElement webElement = driver.FindElement(lnkLogin,10);
             webElement.Click();
         }
 

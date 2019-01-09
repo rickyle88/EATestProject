@@ -18,8 +18,9 @@ namespace EAEmployeeTest.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Login")]
-    public partial class LoginFeature
+    [NUnit.Framework.DescriptionAttribute("Login Check if the login functionality is working as expected with different scen" +
+        "ario")]
+    public partial class LoginCheckIfTheLoginFunctionalityIsWorkingAsExpectedWithDifferentScenarioFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,8 +32,8 @@ namespace EAEmployeeTest.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "\tCheck if the login functionality is working \r\n\tas expected with different scenar" +
-                    "io", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login Check if the login functionality is working as expected with different scen" +
+                    "ario", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -72,7 +73,7 @@ namespace EAEmployeeTest.Features
         
         public virtual void FeatureBackground()
         {
-#line 5
+#line 3
 #line hidden
         }
         
@@ -85,16 +86,16 @@ namespace EAEmployeeTest.Features
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Login with correct username and password", null, new string[] {
                         "smoke",
                         "positive"});
-#line 8
+#line 7
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 5
+#line 3
 this.FeatureBackground();
-#line 9
+#line 8
  testRunner.Given("I have navigatged to the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
+#line 9
  testRunner.And("I see application opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
+#line 10
  testRunner.Then("I click login link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -103,11 +104,11 @@ this.FeatureBackground();
             table1.AddRow(new string[] {
                         "admin",
                         "password"});
-#line 12
- testRunner.When("I enter UserName and Password and click Login", ((string)(null)), table1, "When ");
-#line 15
+#line 11
+ testRunner.When("I enter UserName and Password", ((string)(null)), table1, "When ");
+#line 14
  testRunner.Then("I click Login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 16
+#line 15
  testRunner.Then("I should see the username with hello", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

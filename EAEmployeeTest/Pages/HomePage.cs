@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace EAEmployeeTest.Pages
 {
-    class HomePage : BasePage_PageFactory
+    public class HomePage : BasePage_PageFactory
     {
 
         [FindsBy(How = How.LinkText, Using = "Login")]
@@ -32,9 +32,13 @@ namespace EAEmployeeTest.Pages
         [FindsBy(How = How.XPath, Using = "//a[@title='Manage']")]
         IWebElement lnkLoggedInUser { get; set; }
 
-        public void ClickLoginLink()
+        [FindsBy(How = How.XPath, Using = "//input[@value='Log off']")]
+        IWebElement lnkLogoff { get; set; }
+
+        public LoginPage_PageFactory ClickLoginLink()
         {
             lnkLogin.Click();
+            return GetInstance<LoginPage_PageFactory>();
             //lnkLogin.SelectDropDownList("Hello");
         }
 
@@ -46,22 +50,25 @@ namespace EAEmployeeTest.Pages
         }
 
         //Page Navigation: ensure that the business logic is embedded in our code
-        public EmployeePage ClickEmployeeListLink()
+        public EmployeeListPage ClickEmployeeListLink()
         {
             lnkEmployeeList.Click();
-            return GetInstance<EmployeePage>();
+            return GetInstance<EmployeeListPage>();
 
         }
 
         //Check if Username and password text box are displayed
         public void CheckIfLoginExist()
         {
-            txtUserName.AssertElementPresent();
+            lnkLogin.AssertElementPresent();
         }
 
         public string GetLoggedUser()
         {
             return lnkLoggedInUser.GetLinkText();
         }
+
+        
+       
     }
 }

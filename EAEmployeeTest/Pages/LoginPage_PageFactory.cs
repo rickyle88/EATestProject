@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace EAEmployeeTest.Pages
 {
-    class LoginPage_PageFactory : BasePage_PageFactory
+    public class LoginPage_PageFactory : BasePage_PageFactory
     {
         //IWebDriver driver;
 
@@ -55,23 +55,29 @@ namespace EAEmployeeTest.Pages
         {
             txtUserName.SendKeys(userName);
             txtPassword.SendKeys(password);
-            btnLogin.Click();
+            //btnLogin.Click();
         }
 
-        //Page Navigation: ensure that the business logic is embedded in our code
-        public EmployeePage ClickEmployeeListLink()
+        public HomePage ClickLoginButton()
         {
-            lnkEmployeeList.Click();
-            return GetInstance<EmployeePage>();
-            
+            btnLogin.Submit();
+            return GetInstance<HomePage>();
         }
+
+        
 
         //Check if Username and password text box are displayed
         public void CheckIfLoginExist()
         {
             txtUserName.AssertElementPresent();
         }
+        //Page Navigation: ensure that the business logic is embedded in our code
+        //public EmployeeListPage ClickEmployeeListLink()
+        //{
+        //    lnkEmployeeList.Click();
+        //    return GetInstance<EmployeeListPage>();
 
+        //}
 
     }
 }

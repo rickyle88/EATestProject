@@ -22,9 +22,8 @@ namespace EAAutoFrameWork.Helpers
         {
             ConfigReader.SetFrameworkSettings();
 
-            //string currentDir = "..\\..\\Log\\";
-            string currentDir = Settings.LogPath.ToString();
-           
+            string currentDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
             streamw = File.AppendText(currentDir + logFileName + ".log");
         }
 
@@ -35,7 +34,6 @@ namespace EAAutoFrameWork.Helpers
             streamw.WriteLine("      {0}", logMessage);
             streamw.Flush();
         }
-
 
     }
 }

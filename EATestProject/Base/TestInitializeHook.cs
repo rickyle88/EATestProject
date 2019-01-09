@@ -37,13 +37,7 @@ namespace EAAutoFrameWork.Base
             LogHelpers.Write("Opened the browser !!!");
         }
 
-        public virtual void NavigateSite()
-        {
-            string url = Settings.AUT;
-            DriverContext.browser.GoToURL(url);
-            
-            LogHelpers.Write("Naviagated to the page !!!");
-        }
+       
 
         public void OpenBrower(BrowserType browserType = BrowserType.Chrome)
         {
@@ -58,7 +52,8 @@ namespace EAAutoFrameWork.Base
                     DriverContext.browser = new Browser(DriverContext.Driver);
                     break;
                 case BrowserType.Chrome:
-                    DriverContext.Driver = GetChromeDriver(); ;
+                    DriverContext.Driver = GetChromeDriver();
+                    
                     DriverContext.browser = new Browser(DriverContext.Driver);
                     break;
                 default:
@@ -79,6 +74,14 @@ namespace EAAutoFrameWork.Base
             //var outputdirectory = Path.GetFullPath("C:\\Automation Tools\\ChromeDriver");
 
             //return new ChromeDriver(outputdirectory);
+        }
+
+        public virtual void NavigateSite()
+        {
+            string url = Settings.AUT;
+            DriverContext.browser.GoToURL(url);
+
+            LogHelpers.Write("Naviagated to the page !!!");
         }
     }
 }

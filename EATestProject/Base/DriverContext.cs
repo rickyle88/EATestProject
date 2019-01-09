@@ -19,6 +19,8 @@ namespace EAAutoFrameWork.Base
             set
             {
                 driver = value;
+                //Implicit wait: the implicit wait is set for the life of the WebDriver object instance.
+                //driver.Manage().Timeouts().ImplicitWait=TimeSpan.FromSeconds(10);
             }
         }
 
