@@ -2,6 +2,8 @@
 
 Automation Framework using Selenium with C# and Specflow 
 
+Using Behavior Driven Development - BDD framework allows automation of functional validations in easily readable and understandable format to Business Analysts, Developers, QA
+
 Feature files:
 ```
 EATestProject/EAEmployeeTest/Features/
