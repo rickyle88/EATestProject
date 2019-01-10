@@ -9,7 +9,7 @@ EATestProject/EAEmployeeTest/Features/
 
 Notice: PageFactory has been deprecated and refactoring process is still going on 
 
-Old method: PageFactory
+Old method: PageFactory - And we need to install https://github.com/DotNetSeleniumTools/DotNetSeleniumExtras and include this like in Page Object: using SeleniumExtras.PageObjects; 
 ```
  [FindsBy(How = How.LinkText, Using = "Login")]
  IWebElement lnkLogin { get; set; }
