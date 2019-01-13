@@ -37,6 +37,8 @@ namespace EAAutoFrameWork.Base
             LogHelpers.Write("Opened the browser !!!");
         }
 
+        
+
        
 
         public void OpenBrower(BrowserType browserType = BrowserType.Chrome)

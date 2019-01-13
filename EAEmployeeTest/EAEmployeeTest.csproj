@@ -99,7 +99,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.feature</DependentUpon>
     </Compile>
-    <Compile Include="HookInitialize.cs" />
+    <Compile Include="Hook\HookInitialize.cs" />
     <Compile Include="Pages\CreateEmployeePage.cs" />
     <Compile Include="Pages\EmployeeListPage.cs" />
     <Compile Include="Pages\HomePage.cs" />

@@ -35,5 +35,12 @@ namespace EAAutoFrameWork.Helpers
             streamw.Flush();
         }
 
+        public static void CloseFile()
+        {
+            streamw.Close();
+        }
+
+
+
     }
 }

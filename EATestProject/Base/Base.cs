@@ -23,6 +23,7 @@ namespace EAAutoFrameWork.Base
             set
             {
                 ScenarioContext.Current["currentPage"] = value;
+                
             }
         }
 
@@ -38,6 +39,7 @@ namespace EAAutoFrameWork.Base
 
             PageFactory.InitElements(DriverContext.Driver, pageInstance);
             return pageInstance;
+            //return (TPage Activator.CreateComInstanceFrom)
         }
 
         public TPage As<TPage>() where TPage : BasePage_PageFactory

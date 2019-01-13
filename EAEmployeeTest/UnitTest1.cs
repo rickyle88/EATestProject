@@ -10,6 +10,7 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using EAAutoFrameWork.Helpers;
 using EAAutoFrameWork.Config;
+using EAEmployeeTest.Hook;
 
 namespace EAEmployeeTest
 {

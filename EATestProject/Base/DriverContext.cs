@@ -25,5 +25,10 @@ namespace EAAutoFrameWork.Base
         }
 
         public static Browser browser { get; set; }
+
+        public static void DriverClose()
+        {
+            DriverContext.Driver.Close();
+        }
     }
 }
