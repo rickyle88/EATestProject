@@ -1,4 +1,5 @@
 ﻿using EAAutoFrameWork.Base;
+using EAAutoFrameWork.Config;
 using EAAutoFrameWork.Helpers;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace EAEmployeeTest.Hook
     [Binding]
     public class HookInitialize: TestInitializeHook
     {
-        public HookInitialize() : base(BrowserType.Chrome)
+        public HookInitialize() : base(Settings.BrowerType)
         {
             InitializeSettings();
             //NavigateSite();

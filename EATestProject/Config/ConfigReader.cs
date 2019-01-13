@@ -19,7 +19,8 @@ namespace EAAutoFrameWork.Config
             XPathItem islog;
             XPathItem testType;
             XPathItem isreport;
-            
+            XPathItem browser;
+
             //string strFileName = Environment.CurrentDirectory.ToString() + "\\Config\\GlobalConfig.xml";
             string strFileName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\Config\\GlobalConfig.xml";
             FileStream stream = new FileStream(strFileName, FileMode.Open);
@@ -32,7 +33,7 @@ namespace EAAutoFrameWork.Config
             testType = navigator.SelectSingleNode("EAAutoFramework/RunSettings/TestType");
             islog = navigator.SelectSingleNode("EAAutoFramework/RunSettings/Is_Log");
             isreport = navigator.SelectSingleNode("EAAutoFramework/RunSettings/IsReport");
-            
+            browser = navigator.SelectSingleNode("EAAutoFramework/RunSettings/Browser");
 
             //Set XML node to be used accross framework
             Settings.AUT = aut.Value.ToString();
@@ -40,6 +41,10 @@ namespace EAAutoFrameWork.Config
             Settings.TestType = testType.Value.ToString();
             Settings.Is_Log = islog.Value.ToString();
             Settings.IsReporting = isreport.Value.ToString();
+            if (browser.ToString().Equals("Chrome"))
+            {
+                Settings.BrowerType = Base.BrowserType.Chrome;
+            }
         }
         
     }

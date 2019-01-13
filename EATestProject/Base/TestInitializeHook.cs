@@ -32,7 +32,7 @@ namespace EAAutoFrameWork.Base
             LogHelpers.CreateLogFile();
 
             //Open browser
-            OpenBrower(Brower);
+            OpenBrower(Settings.BrowerType);
 
             LogHelpers.Write("Opened the browser !!!");
         }
